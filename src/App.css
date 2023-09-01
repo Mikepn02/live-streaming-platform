@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your CSS or Tailwind CSS config */
+.custom-border {
+    border-bottom: 10px solid #E179CB;
+    height: 2px;
+    width: 10vw;
+    border-radius: 10px;
+  }
+.small-customer-border {
+    border-bottom: 5px solid #E179CB;
+    height: 2px;
+    width: 10vw;
+    border-radius: 10px;
+}
+.footer-section {
+    width: 25%;
+}
