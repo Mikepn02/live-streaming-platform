@@ -6,7 +6,7 @@
 .custom-border {
     border-bottom: 10px solid #E179CB;
     height: 2px;
-    width: 10vw;
+    width: 5vw;
     border-radius: 10px;
   }
 .small-customer-border {
@@ -17,4 +17,14 @@
 }
 .footer-section {
     width: 25%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #fff;
+    padding-bottom: 30px;
+    
 }

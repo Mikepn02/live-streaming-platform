@@ -18,7 +18,7 @@ const Forms = () => {
   return (
     <Box className="border-2 border-[#E179CB] container justify-around mx-auto h-[55vh] flex flex-col md:flex-row mt-10 mb-10 rounded-[10px]">
       <div className="w-1/3 flex flex-col p-10 ">
-        <p className="text-4xl font-bold">Let Get in</p>
+        <p className="text-4xl font-bold">Let Get's in</p>
         <p className="text-4xl font-bold">Touch</p>
         <div className="custom-border mt-5"></div>
         <p className="mt-10">
@@ -106,10 +106,11 @@ const Forms = () => {
               />
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
-              <Button type="submit" className="bg-[#ED73D3] text-white">
-                Submit Message
-              </Button>
+
             </Box>
+            <div className="flex justify-start">
+             <button className="bg-[#D7DF4D] w-48 h-12">Submit Message</button>
+             </div>
           </form>
         )}
       </Formik>
