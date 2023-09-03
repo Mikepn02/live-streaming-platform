@@ -2,13 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .css-invert {
+      @apply invert-[50%] brightness-200;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      border-radius: 2px;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #09090a;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #5c5c7b;
+      border-radius: 50px;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #7878a3;
+    }
+  }
+@layer components {
+      .leftsidebar {
+    @apply sticky left-0 top-0 z-20 flex h-screen w-[300px] flex-col justify-between overflow-auto   max-md:hidden;
+    @apply bg-[#FAFAFA];
+  }
+
+  .leftsidebar_link {
+    @apply relative flex justify-start gap-4 rounded-lg p-4;
+
+  }
+}
 /* Add this to your CSS or Tailwind CSS config */
 .custom-border {
     border-bottom: 10px solid #E179CB;
     height: 2px;
     width: 5vw;
     border-radius: 10px;
+
   }
+
+  .topbar{
+    width: 75%;
+  }
+
 .small-customer-border {
     border-bottom: 5px solid #E179CB;
     height: 2px;
@@ -18,13 +59,9 @@
 .footer-section {
     width: 25%;
 }
+.text-bg{
+  background-image: url('../public/assets/play2.png');
+  background-repeat: no-repeat;
+}
 
-/* .container{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 200px;
-    background-color: #fff;
-    padding-bottom: 30px;
-    
-} */
+
