@@ -56,19 +56,57 @@ export const Streamcardinfo = [
         viewers: '234,555',
 
     },
-    // {
-    //     title: "Merci Vs CR7",
-    //     host: "live",
-    //     user:"Mark zucker",
-    //     img:"/assets/stranger.png",
-    //     topic:"League of lengends",
-    //     viewers: '234,555',
+    {
+        title: "Merci Vs CR7",
+        host: "live",
+        user:"Mark zucker",
+        img:"/assets/stranger.png",
+        topic:"League of lengends",
+        viewers: '234,555',
 
-    // },
+    },
+    {
+        title: "Satisfying sounds",
+        host: "Live",
+        user:"Mark zucker",
+        img:"/assets/stranger.png",
+        topic:"League of lengends",
+        viewers: '234,555',
+
+    },
+    {
+        title: "Merci Vs CR7",
+        host: "live",
+        user:"Mark zucker",
+        img:"/assets/stranger.png",
+        topic:"League of lengends",
+        viewers: '234,555',
+
+    },
 
 ]
 
 export const userInfo =[
+    {
+        name:"Mark zuck",
+        Followers: 2002
+    },
+    {
+        name:"Mark zuck",
+        Followers: 2002
+    },
+    {
+        name:"Mark zuck",
+        Followers: 2002
+    },
+    {
+        name:"Mark zuck",
+        Followers: 2002
+    },
+    {
+        name:"Mark zuck",
+        Followers: 2002
+    },
     {
         name:"Mark zuck",
         Followers: 2002

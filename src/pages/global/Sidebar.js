@@ -26,7 +26,7 @@ const Sidebar = () => {
                         <Link
                             to={link.navigate}
                             key={link.label}
-                            className={`leftsidebar_link ${isActive && "bg-red-500"}`}
+                            className={`leftsidebar_link ${isActive && "bg-[#d1cece]"}`}
                         >
                             <img
                                 src={link.imgUrl}
@@ -40,6 +40,23 @@ const Sidebar = () => {
                         </Link>
                     )
                 })}
+            </div>
+
+            <div className='mt-28 flex flex-col px-5 p-10'>
+               <div className='space-y-8'>
+               <div className='flex font-bold space-x-2 justify-center items-center'>
+                <img src='/assets/download.svg' alt='download'/>
+                <p>Mobile App</p>
+               </div>
+               <div className='flex font-bold space-x-2 bg-[#edf0b9] w-full h-12 items-center justify-center'>
+                <img src='/assets/crown.svg' alt='download'/>
+                <p>Get Premium</p>
+               </div>
+               <div className='flex font-bold bg-[#DCAB8D] space-x-2 w-42 h-12 justify-center items-center rounded-lg'>
+                <img src='/assets/addp.svg' alt='download' width={24} height={24}/>
+                <p className=''>invite friend</p>
+               </div>
+               </div>
             </div>
         </div>
 

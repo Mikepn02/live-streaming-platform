@@ -15,9 +15,9 @@ const initialValues = {
 const Forms = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
 
-  return (
-    <Box className="border-2 border-[#E179CB] container justify-around mx-auto h-[55vh] flex flex-col md:flex-row mt-10 mb-10 rounded-[10px]">
-      <div className="w-1/3 flex flex-col p-10 ">
+  return ( 
+    <Box className="border-2 border-[#E179CB] md:w-[80%] rounded-[10px] items-center justify-center p-5 md:flex w-full md:mx-auto  md:flex-row">
+      <div className=" w-full md:w-1/2 flex flex-col p-10">
         <p className="text-4xl font-bold">Let Get's in</p>
         <p className="text-4xl font-bold">Touch</p>
         <div className="custom-border mt-5"></div>
@@ -30,7 +30,8 @@ const Forms = () => {
         <p className="mt-20 font-bold">livestreaming@gmail.com</p>
         <div className="small-customer-border"></div>
       </div>
-      <Formik
+    <div className="md:w-1/2 w-full ">
+    <Formik
         initialValues={initialValues}
         onSubmit={(values) => {
           console.log(values);
@@ -39,14 +40,9 @@ const Forms = () => {
         {({ values, errors, handleBlur, handleChange }) => (
           <form className="mt-10">
             <Box
-              display="grid"
-              gap="30px"
-              gridTemplateColumns="repeat(4,minmax(0,1fr))"
-              sx={{
-                "& > div": {
-                  gridColumn: isNonMobile ? undefined : "span-4",
-                },
-              }}
+               display="grid"
+               gap="30px"
+               gridTemplateColumns={`repeat(${isNonMobile ? 4 : 1}, minmax(0, 1fr))`}
             >
               <TextField
                 fullWidth
@@ -114,6 +110,7 @@ const Forms = () => {
           </form>
         )}
       </Formik>
+    </div>
     </Box>
   );
 };
