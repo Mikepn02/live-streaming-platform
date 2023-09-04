@@ -1,5 +1,3 @@
-import Followers from '../components/works/users';
-
 export const sidebarLinks = [
     {
         imgUrl:'/assets/home.svg',

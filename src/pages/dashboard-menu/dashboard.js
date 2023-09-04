@@ -1,10 +1,10 @@
 import React from 'react'
 import LeftSidebar from '../global/Sidebar'
 import Topbar from '../global/Topbar'
-import Content from '../global/content'
 import Bottombar from '../global/Bottombar'
+import Content from '../dashboard-content/content'
 
-const Dashboard = () => {
+const Dashboard = ({onLogin}) => {
   return (
     <section className='flex flex-row w-full'>
       <div className='w-full md:w-1/4'>
