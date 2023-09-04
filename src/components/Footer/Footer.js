@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex flex-col w-full md:flex-row justify-around md:p-10 p-8 space-y-10 md:space-y-0">
                 <div className="md:footer-section  items-center  justify-center">
                     <div className="flex  items-center space-x-2 mb-4 md:mb-0">
-                        <img src="/assets/vector.png" alt="logo" className="w-8 h-8" />
+                        <img src="/assets/logo.svg" alt="logo" className="w-8 h-8" />
                         <p className="text-black font-semibold text-2xl">Live Stream</p>
                     </div>
                     <p className="mt-5">

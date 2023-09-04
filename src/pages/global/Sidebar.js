@@ -8,7 +8,7 @@ const Sidebar = () => {
     return (
         <div className='custom-scrollbar leftsidebar'>
             <div className='flex justify-center pt-5  space-x-4 items-center font-bold'>
-                <img src='/assets/vector.png' alt='logo' />
+                <img src='/assets/logo.svg' alt='logo' />
                 <p>Videbucks</p>
             </div>
             <div>

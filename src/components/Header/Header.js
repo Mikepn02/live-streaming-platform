@@ -5,7 +5,7 @@ const Header = () => {
     <header className="p-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
-          <img src="/assets/vector.png" alt="logo" className="w-8 h-8" />
+          <img src="/assets/logo.svg" alt="logo" className="w-8 h-8" />
           <p className="text-black font-semibold text-2xl">videbucks</p>
         </div>
 
