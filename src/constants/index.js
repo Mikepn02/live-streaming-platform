@@ -6,22 +6,22 @@ export const sidebarLinks = [
     },
     {
         imgUrl:'/assets/stream.svg',
-        navigate:'/stream',
+        navigate:'/dashboard/stream',
         label:'Stream'
     },
     {
         imgUrl:'/assets/streamers.svg',
-        navigate:'/streamers',
+        navigate:'/dashboard/hhh',
         label:'Streamers'
     },
     {
         imgUrl:'/assets/account.svg',
-        navigate:'/friends',
+        navigate:'/dashboard/friends',
         label:'Friends'
     },
     {
         imgUrl:'/assets/trophy.svg',
-        navigate:'/challenges',
+        navigate:'/dashboard/challenges',
         label:'Challenges'
     },
 ]

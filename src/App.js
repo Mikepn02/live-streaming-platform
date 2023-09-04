@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/dashboard-menu/dashboard';
 import Streamcard from './components/cards/Streamcard';
 import { useEffect, useState } from 'react';
+import Content from './pages/dashboard-content/content';
+import Streamcontent from './pages/dashboard-content/streamcontent';
 
 
 
@@ -24,15 +26,19 @@ function App() {
   }
   return (
     <div className="App">
-    <Router>
-     <Routes>
-       <Route path='/' element={<Home/>}/>
-       <Route path='/dashboard' element={<Dashboard/>} />
-       <Route path='/authentication' element={<Signup/>}/>
-       <Route path='/dashboard/card' element={<Streamcard/>}/>
-     </Routes>
-    </Router>
-</div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/dashboard' element={<Dashboard contentComponent={Content}/>}/>
+          <Route path='/dashboard/stream' element={<Dashboard contentComponent={Streamcontent}/>}/>
+          <Route path='/dashboard/hhh' element={<Dashboard contentComponent={Streamcontent}/>}/>
+          <Route path='/dashboard/friends' element={<Dashboard contentComponent={Streamcontent}/>}/>
+          <Route path='/dashboard/challenges' element={<Dashboard contentComponent={Streamcontent}/>}/>
+          <Route path='/authentication' element={<Signup />} />
+          <Route path='/dashboard/card' element={<Streamcard />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
