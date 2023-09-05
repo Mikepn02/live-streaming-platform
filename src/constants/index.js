@@ -31,7 +31,7 @@ export const Streamcardinfo = [
         title: "Live:Cyberpunk vs Nemiga",
         host: "Live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/stranger.jpg",
         topic:"League of lengends",
         viewers: '234,555'
 
@@ -40,7 +40,7 @@ export const Streamcardinfo = [
         title: "Crazy Pranks",
         host: "Live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/girl.jpg",
         topic:"League of lengends",
         viewers: '234,555',
 
@@ -49,7 +49,7 @@ export const Streamcardinfo = [
         title: "Satisfying sounds",
         host: "Live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/stranger.jpg",
         topic:"League of lengends",
         viewers: '234,555',
 
@@ -58,7 +58,7 @@ export const Streamcardinfo = [
         title: "Merci Vs CR7",
         host: "live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/girl.jpg",
         topic:"League of lengends",
         viewers: '234,555',
 
@@ -67,7 +67,7 @@ export const Streamcardinfo = [
         title: "Satisfying sounds",
         host: "Live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/stranger.jpg",
         topic:"League of lengends",
         viewers: '234,555',
 
@@ -76,7 +76,7 @@ export const Streamcardinfo = [
         title: "Merci Vs CR7",
         host: "live",
         user:"Mark zucker",
-        img:"/assets/stranger.png",
+        img:"/assets/girl.jpg",
         topic:"League of lengends",
         viewers: '234,555',
 
@@ -124,5 +124,50 @@ export const userInfo =[
     {
         name:"Mark zuck",
         Followers: 2002
+    },
+]
+
+export const Followercardinfo = [
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
+    },
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
+    },
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
+    },
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
+    },
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
+    },
+    {
+        title: "Live:Cyberpunk vs Nemiga7",
+        host: "live",
+        user:"iShowSpeed",
+        img:"/assets/programmer.jpeg",
+        viewers: '34,555',
     },
 ]

@@ -24,7 +24,7 @@ export const Slide1 = () => {
         },
         768:{
             slidesPerView: 3,
-            spaceBetween: 80
+            spaceBetween: 40
         }
     }}
     >
@@ -34,6 +34,7 @@ export const Slide1 = () => {
               title={info.title}
               host={info.host}
               user={info.user}
+              image={info.img}
               topic={info.topic}
               viewers={info.viewers}
               

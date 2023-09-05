@@ -1,11 +1,57 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Slide1 } from "./slide";
+import { Followercardinfo } from "../../constants";
+import Followercard from "../../components/cards/Followercard";
 
 const Streamcontent = () => {
+  const itemsPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = Followercardinfo.slice(0, indexOfLastItem);
+
+  const loadMore = () => {
+    if (indexOfLastItem < Followercardinfo.length) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
   return (
     <div>
-      Hello
-    </div>
-  )
-}
+      <h1 className="font-semibold text-xl md:mt-8 mt-2">🔥Trending now</h1>
+      <div className="md:space-x-2 md:mt-3 flex w-full">
+        <Slide1 />
+      </div>
+      <h1 className="font-bold mt-4 text-xl">From people you follow</h1>
+      <div className="md:mt-3 w-full">
+        <div className="md:mt-3 w-full">
+          <div className="grid grid-cols-2 gap-3">
+            {currentItems.map((follower, i) => (
+              <div key={i}>
+                <Followercard
+                  title={follower.title}
+                  host={follower.host}
+                  user={follower.user}
+                  image={follower.img}
+                  viewers={follower.viewers}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
 
-export default Streamcontent
+        {indexOfLastItem < Followercardinfo.length && (
+          <div className="mt-4">
+              <p
+              onClick={loadMore}
+              className="font-bold tetx-2xl "
+              >Show more</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Streamcontent;
