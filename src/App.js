@@ -7,6 +7,9 @@ import Streamcard from "./components/cards/Streamcard";
 import { useEffect, useState } from "react";
 import Content from "./pages/dashboard-content/content";
 import Streamcontent from "./pages/dashboard-content/streamcontent";
+import Streamerscontent from "./pages/dashboard-content/Streamerscontent";
+import FriendContent from "./pages/dashboard-content/FriendContent";
+import ChallengeContent from "./pages/dashboard-content/ChallengeContent";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -37,15 +40,15 @@ function App() {
           />
           <Route
             path="/dashboard/hhh"
-            element={<Dashboard contentComponent={Streamcontent} />}
+            element={<Dashboard contentComponent={Streamerscontent} />}
           />
           <Route
             path="/dashboard/friends"
-            element={<Dashboard contentComponent={Streamcontent} />}
+            element={<Dashboard contentComponent={FriendContent} />}
           />
           <Route
             path="/dashboard/challenges"
-            element={<Dashboard contentComponent={Streamcontent} />}
+            element={<Dashboard contentComponent={ChallengeContent} />}
           />
           <Route path="/authentication" element={<Signup />} />
           <Route path="/dashboard/card" element={<Streamcard />} />

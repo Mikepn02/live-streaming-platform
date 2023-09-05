@@ -5,7 +5,7 @@ const Followercard = ({title , host, user,image , viewers}) => {
   return (
 
             <div>
-                <Box className='flex flex-col b w-[30vw] bg-aliceblue h-[40vh]  rounded-[40px]'>
+                <Box className='flex flex-col b md:w-[30vw] w-full bg-aliceblue h-[40vh]  rounded-[40px]'>
                     <div>
                     <img src={image} alt='strange' className='h-[25vh] w-fit   rounded-t-[40px]'/>
                     <img src='/assets/play.png' alt='play' className='-mt-40 ml-52 absolute'/>

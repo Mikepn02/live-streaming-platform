@@ -4,7 +4,7 @@ import { Followercardinfo } from "../../constants";
 import Followercard from "../../components/cards/Followercard";
 
 const Streamcontent = () => {
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -25,8 +25,8 @@ const Streamcontent = () => {
       </div>
       <h1 className="font-bold mt-4 text-xl">From people you follow</h1>
       <div className="md:mt-3 w-full">
-        <div className="md:mt-3 w-full">
-          <div className="grid grid-cols-2 gap-3">
+        <div className="md:mt-3 mt-2 md:mb-0 mb-8 w-full">
+          <div className="md:grid md:grid-cols-2 md:gap-3 ">
             {currentItems.map((follower, i) => (
               <div key={i}>
                 <Followercard
@@ -45,7 +45,7 @@ const Streamcontent = () => {
           <div className="mt-4">
               <p
               onClick={loadMore}
-              className="font-bold tetx-2xl "
+              className="font-bold tetx-2xl text-center text-pink-500 "
               >Show more</p>
           </div>
         )}

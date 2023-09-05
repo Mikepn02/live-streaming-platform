@@ -1,5 +1,5 @@
 import React from 'react'
-import { Streamcardinfo , userInfo} from '../../constants'
+import { Streamcardinfo , userFollowercardinfo, userInfo} from '../../constants'
 import Streamcard from '../../components/cards/Streamcard'
 import Usercard from '../../components/cards/Usercard'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { UserFollowcard } from '../../components/cards/UserFollowcard';
 
 export const Slide1 = () => {
   return (
@@ -72,4 +73,31 @@ export const Slide2 = () => {
       ))}
     </Swiper>
    )
+}
+export const Slide3 = () => {
+  return (
+   <Swiper
+   modules={[Navigation, Pagination, Scrollbar, A11y]}
+
+   navigation
+   onSwiper={(swiper) => console.log(swiper)}
+   onSlideChange={() => console.log('slide change')}
+   breakpoints={{
+       640: {
+           slidesPerView: 2,
+           spaceBetween: 50
+       },
+       768:{
+           slidesPerView: 5,
+           spaceBetween: 80
+       }
+   }}
+   >
+       {userFollowercardinfo.map((user , index) => (
+           <SwiperSlide key={index}>
+                <UserFollowcard name={user.name} image={user.image} about={user.about} followers={user.followers} following={user.following} />
+           </SwiperSlide>
+     ))}
+   </Swiper>
+  )
 }
