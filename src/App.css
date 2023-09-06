@@ -88,3 +88,8 @@
   background-repeat: no-repeat;
 
 }
+.my-gradient {
+  border-image: linear-gradient(to right, #E179CB, #DCAB8D, #D7DF4D);
+  border-image-slice: 1;
+  border-radius: 20px;
+}

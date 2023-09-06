@@ -13,7 +13,7 @@ const Sidebar = () => {
             </div>
             <div>
                 <button className='flex mx-auto px-5 justify-center items-center space-x-2 my-10 text-white bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D]  w-42 h-10 rounded-lg hover:bg-[#D760B4] focus:outline-none focus:ring-2 focus:ring-[#E179CB]'>
-                    <img src='/assets/hotspot.png' alt='hotspot' width={24} height={24} />
+                    <img src='/assets/hotspot.svg' alt='hotspot'  width={24} height={24}/>
                     <p className='text-sm-1 flex font-semibold'>Stream now</p>
                 </button>
 

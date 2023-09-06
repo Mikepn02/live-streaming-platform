@@ -344,3 +344,106 @@ export const userFollowercardinfo2 = [
     },
 
 ]
+
+export const userMessageinfo = [
+ {
+    image: '/assets/follower.png',
+    name: "Jenna Ortega",
+    message:'Sup?',
+    time:'12:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Mad Boy",
+    message:'yo bro😅',
+    time:'5:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Jenna Ortega",
+    message:'Sup?',
+    time:'12:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Mad Boy",
+    message:'yo bro😅',
+    time:'5:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Jenna Ortega",
+    message:'Sup?',
+    time:'12:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Mad Boy",
+    message:'yo bro😅',
+    time:'5:33',
+    delivered:'sent, received'
+
+ },
+ {
+    image: '/assets/follower.png',
+    name: "Jenna Ortega",
+    message:'Sup?',
+    time:'12:33',
+    delivered:'sent, received'
+
+ },
+
+]
+
+export const MessageArray= [
+    {   
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: ["Hello...","I am good  and how about you?"],
+    },
+    {
+        message: [
+            "hey there",
+            "How are you doing?"
+    ],
+        reply: "Hello...",
+        
+    },
+    {
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: "Hello..."
+    },
+    {
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: "Hello..."
+    },
+    {
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: ["Hello...","I am good  and how about you?"],
+    },
+    {
+        message: [
+            "hey there",
+            "How are you doing?"
+    ],
+        reply: "Hello...",
+        
+    },
+    {
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: "Hello..."
+    },
+    {
+        message: "I am doing well. Can we meet up tomorrow?",
+        reply: "Hellosssssssssssssssse..."
+    },
+]
