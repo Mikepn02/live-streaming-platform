@@ -10,6 +10,7 @@ import Streamcontent from "./pages/dashboard-content/streamcontent";
 import Streamerscontent from "./pages/dashboard-content/Streamerscontent";
 import FriendContent from "./pages/dashboard-content/FriendContent";
 import ChallengeContent from "./pages/dashboard-content/ChallengeContent";
+import Chatcontent from "./pages/dashboard-content/Chatcontent";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -49,6 +50,10 @@ function App() {
           <Route
             path="/dashboard/challenges"
             element={<Dashboard contentComponent={ChallengeContent} />}
+          />
+          <Route
+            path="/dashboard/chat"
+            element={<Dashboard contentComponent={Chatcontent} />}
           />
           <Route path="/authentication" element={<Signup />} />
           <Route path="/dashboard/card" element={<Streamcard />} />

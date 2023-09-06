@@ -24,6 +24,11 @@ export const sidebarLinks = [
         navigate: '/dashboard/challenges',
         label: 'Challenges'
     },
+    {
+        imgUrl: '/assets/chat.svg',
+        navigate: '/dashboard/chat',
+        label: 'Chat'
+    },
 ]
 
 export const Streamcardinfo = [

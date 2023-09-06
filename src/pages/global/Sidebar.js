@@ -18,12 +18,9 @@ const Sidebar = () => {
                 </button>
 
             </div>
-            <div className='flex -w-full flex-1 flex-col gap-6 px-6'>
+            <div className='flex -w-full flex-1 flex-col gap-3 px-6'>
                 {sidebarLinks.map((link) => {
                     let isActive = (location.pathname.includes(link.navigate) && link.navigate.length < 1) || link.navigate === location.pathname;
-                    // if (link.navigate === '/dashboard') {
-                    //     isActive = null;
-                    // }
                    let isStreamers = link.navigate;
                  
 
