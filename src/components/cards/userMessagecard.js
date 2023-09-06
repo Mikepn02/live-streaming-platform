@@ -22,7 +22,7 @@ const UserMessagecard = ({ image, name, message, time, delivered }) => {
           messageRead ? (
             <p>{delivered}</p>
           ) : (
-            <button onClick={handleMarkAsRead} className='bg-pink-500 text-white rounded-full w-6 h-6'>1</button>
+            <button onClick={handleMarkAsRead} className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white rounded-full w-6 h-6'>1</button>
           )
         ) : (
           <p>{delivered}</p>
