@@ -65,9 +65,9 @@ const Chatcontent = () => {
       <div className='border-[10px] w-3/4 rounded-[2px] border-pink-400'>
         <div><Messagebar /></div>
         <div>
-  <div class="space-x-4 text-center font-semibold text-pink-500">
+  <div class="space-x-4 text-center font-semibold ">
     {endIndex < MessageArray.length && (
-      <p onClick={handlePageChange} class="previous-messages">Previous Messages</p>
+      <p onClick={handlePageChange} class="text-pink-500">Previous Messages</p>
     )}
 
     <div class="flex-1 min-h-[60vh] overflow-x-auto max-h-[60vh]">
