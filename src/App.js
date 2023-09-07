@@ -9,8 +9,13 @@ import Content from "./pages/dashboard-content/content";
 import Streamcontent from "./pages/dashboard-content/streamcontent";
 import Streamerscontent from "./pages/dashboard-content/Streamerscontent";
 import FriendContent from "./pages/dashboard-content/FriendContent";
-import ChallengeContent from "./pages/dashboard-content/ChallengeContent";
+import PremiumContent from "./pages/dashboard-content/premiumContent";
 import Chatcontent from "./pages/dashboard-content/Chatcontent";
+import ChallengeContent from "./pages/dashboard-content/ChallengeContent";
+import ProfileContent from "./pages/dashboard-content/ProfileContent";
+import ConnectBank from "./pages/dashboard-content/ConnectBank";
+import SettingContent from "./pages/dashboard-content/SettingContent";
+import Livestream from "./pages/dashboard-content/Livestream";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -41,7 +46,14 @@ function App() {
           />
           <Route
             path="/dashboard/hhh"
-            element={<Dashboard contentComponent={Streamerscontent} />}
+            // element={<Dashboard contentComponent={Streamerscontent} />}
+            // element={<Dashboard contentComponent={ProfileContent} />}
+            // element={<Dashboard contentComponent={ConnectBank} />}
+            element={<Dashboard contentComponent={SettingContent} />}
+          />
+          <Route 
+          path="/livestream"
+          element={<Livestream />}
           />
           <Route
             path="/dashboard/friends"
@@ -49,6 +61,7 @@ function App() {
           />
           <Route
             path="/dashboard/challenges"
+            // element={<Dashboard contentComponent={PremiumContent} />}
             element={<Dashboard contentComponent={ChallengeContent} />}
           />
           <Route

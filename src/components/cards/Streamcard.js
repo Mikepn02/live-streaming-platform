@@ -8,7 +8,7 @@ const Streamcard = ({title , host, user,image , topic , viewers}) => {
                 <div>
                 <img src={image} alt='strange' className='h-[20vh] rounded-t-[40px] w-full'/>
                 <img src='/assets/play.png' alt='play' className='-mt-32 ml-36 absolute'/>
-                <button className='-mt-48  ml-72 absolute bg-[#D985BD] text-white font-bold w-20 h-8 rounded-[10px]'>{host}</button>
+                <button className='-mt-48  ml-80 absolute bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]'>{host}</button>
                 </div>
                 <div className='flex justify-between p-5'>
                     <p className='font-semibold '>{title}</p>

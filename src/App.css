@@ -93,3 +93,9 @@
   border-image-slice: 1;
   border-radius: 20px;
 }
+/* In your CSS or JavaScript file */
+.stream-bg {
+  background-image: url('../public/assets/programmer.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

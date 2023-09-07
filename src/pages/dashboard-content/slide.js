@@ -1,6 +1,7 @@
 import React from 'react'
-import { Streamcardinfo , userInfo} from '../../constants'
+import { Streamcardinfo , Followercardinfo , userInfo} from '../../constants'
 import Streamcard from '../../components/cards/Streamcard'
+import Followercard from '../../components/cards/Followercard'
 import Usercard from '../../components/cards/Usercard'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -73,4 +74,38 @@ export const Slide2 = () => {
       ))}
     </Swiper>
    )
+}
+export const Slide3 = () => {
+  return (
+   <Swiper
+   modules={[Navigation, Pagination, Scrollbar, A11y]}
+
+   navigation
+   onSwiper={(swiper) => console.log(swiper)}
+   onSlideChange={() => console.log('slide change')}
+   breakpoints={{
+       640: {
+           slidesPerView: 1,
+           spaceBetween: 50
+       },
+       768:{
+           slidesPerView: 2,
+           spaceBetween: 80
+       }
+   }}
+   >
+    {Followercardinfo.map((info , index) => (
+      <SwiperSlide key={index}>
+      <Followercard 
+        title={info.title}
+        host={info.host}
+         user={info.user}
+         image={info.img}
+         viewers={info.viewers}
+         action='challenge'
+        />
+        </SwiperSlide>
+       ))}
+   </Swiper>
+  )
 }

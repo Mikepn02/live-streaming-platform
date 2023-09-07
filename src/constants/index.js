@@ -233,6 +233,62 @@ export const Followercardinfo = [
     },
 
 ]
+export const Userpostinfo = [
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        // img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        // img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+    {
+        profile: '/assets/follower.png',
+        user: "iShowSpeed",
+        img: "/assets/girl.jpg",
+        topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
+    },
+]
 
 export const userFollowercardinfo = [
     {

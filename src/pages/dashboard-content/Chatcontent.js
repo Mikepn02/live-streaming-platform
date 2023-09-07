@@ -28,7 +28,7 @@ const Chatcontent = () => {
     setActiveTab(tab);
   }
   return (
-    <div className='w-full md:w-[80%]   mr-20 h-[85vh]  flex rounded-xl mt-8 border-8 border-pink-400'>
+    <div className='w-full md:w-[90%]   mr-20 h-[85vh]  flex rounded-xl mt-8 border-8 border-pink-400'>
       <div className='border-14 border-[10px] rounded-[1px] w-2/4 border-pink-400 '>
         <div className='flex flex-col items-center justify-center p-8 space-y-4'>
           <div className='flex  space-x-8 text-[#979797] font-semibold opac'>
@@ -65,33 +65,39 @@ const Chatcontent = () => {
       <div className='border-[10px] w-3/4 rounded-[2px] border-pink-400'>
         <div><Messagebar /></div>
         <div>
-  <div class="space-x-4 text-center font-semibold ">
-    {endIndex < MessageArray.length && (
-      <p onClick={handlePageChange} class="text-pink-500">Previous Messages</p>
-    )}
+          <div class="space-x-4 text-center font-semibold ">
+            {endIndex < MessageArray.length && (
+              <p onClick={handlePageChange} class="text-pink-500">Previous Messages</p>
+            )}
 
-    <div class="flex-1 min-h-[60vh] overflow-x-auto max-h-[60vh]">
-      {messageToDisplay.map((item, index) => (
-        <Messages
-          key={index}
-          message={item.message}
-          reply={Array.isArray(item.reply) ? item.reply.join('\n') : item.reply}
-        />
-      ))}
-    </div>
-  </div>
+            <div class="flex-1 min-h-[60vh] overflow-x-auto max-h-[60vh]">
+              {messageToDisplay.map((item, index) => (
+                <Messages
+                  key={index}
+                  message={item.message}
+                  reply={Array.isArray(item.reply) ? item.reply.join('\n') : item.reply}
+                />
+              ))}
+            </div>
+          </div>
 
-  <div class="flex w-[80%] mx-auto items-center mt-4">
-    <input
-      type="email"
-      placeholder="Type a message"
-      class="flex-1 h-[50px] w-[400px] px-4 bg-transparent border border-gray-300 rounded-l-[50px] outline-none text-lg"
-    />
-    <button class="h-[50px] bg-gray-200 rounded-r-[50px] px-4">
-      <img src="/assets/email.png" alt="search" class="my-0" />
-    </button>
-  </div>
-</div>
+          <div className='flex p-2'>
+            <div class="flex  mx-auto p-2  border space-x-2  w-[80%] border-gray-300 rounded-lg items-center mt-4">
+              <img src='/assets/channel.svg' alt='channel' />
+              <input
+                type="email"
+                placeholder="Type a message"
+                class="flex-1 h-[50px] w-[400px] px-4 bg-transparent  outline-none text-lg"
+              />
+              <img src="/assets/emoji.svg" alt="search" class="my-0" />
+              <img src='/assets/camera.svg' alt='camera' />
+
+            </div>
+            <button className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] w-14 h-14 rounded-lg flex items-center justify-center m-auto'>
+              <img src='/assets/voice.svg' alt='voice' />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
