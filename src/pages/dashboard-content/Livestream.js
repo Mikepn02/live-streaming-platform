@@ -19,7 +19,7 @@ const Livestream = () => {
                     <p className='text-white'>45,334 Followers</p>
                 </div>
             </div>
-            <div className='flex flex-col w-1/2 justify-between items-end p-8 '>
+            <div className='flex flex-col w-1/2 justify-between items-end p-4'>
                 <div className=''>
                     <button className='relative flex ml-0 space-x-2 rounded-[50px] w-[9vw] h-10 items-center justify-center mt-5'>
                         <div className='bg-white w-full h-full opacity-[17%] rounded-[50px] absolute inset-0'></div>
@@ -27,7 +27,7 @@ const Livestream = () => {
                     </button>
                 </div>
 
-                <div className='p-5 gap-10'>
+                <div className='p-5'>
                     <div className='flex flex-col gap-5 justify-end items-end'>
                         <div className='flex space-x-4 items-center'>
                             <p className='text-white text-xl'>iShowSpeed</p>
@@ -45,7 +45,6 @@ const Livestream = () => {
                             type='email'
                             placeholder='Type a message'
                             className='flex-1 h-[50px]  w-[35vw] bg-white opacity-[9%] rounded-[10px] outline-none px-4 text-lg text-[#797979]'
-                            
                         />
                     </div>
                     <div className='flex justify-end items-center mt-4 space-x-8'>
