@@ -99,3 +99,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.challenge-bg{
+  background-image: url('../public/assets/challenger.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-1{
+   background-color: rgba(225, 121, 203 , 20%);
+}
+.bg-2{
+  background: rgba(215, 223, 77,18%);
+}

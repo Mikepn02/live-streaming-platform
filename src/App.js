@@ -16,6 +16,7 @@ import ProfileContent from "./pages/dashboard-content/ProfileContent";
 import ConnectBank from "./pages/dashboard-content/ConnectBank";
 import SettingContent from "./pages/dashboard-content/SettingContent";
 import Livestream from "./pages/dashboard-content/Livestream";
+import ChallengePage from "./pages/dashboard-content/ChallengePage";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -51,9 +52,9 @@ function App() {
             // element={<Dashboard contentComponent={ConnectBank} />}
             element={<Dashboard contentComponent={SettingContent} />}
           />
-          <Route 
-          path="/livestream"
-          element={<Livestream />}
+          <Route
+            path="/livestream"
+            element={<Livestream />}
           />
           <Route
             path="/dashboard/friends"
@@ -67,6 +68,10 @@ function App() {
           <Route
             path="/dashboard/chat"
             element={<Dashboard contentComponent={Chatcontent} />}
+          />
+          <Route
+            path="/challenge"
+            element={<ChallengePage/>}
           />
           <Route path="/authentication" element={<Signup />} />
           <Route path="/dashboard/card" element={<Streamcard />} />
