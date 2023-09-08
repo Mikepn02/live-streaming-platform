@@ -98,6 +98,7 @@
   background-image: url('../public/assets/programmer.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  /* opacity: 80%; */
 }
 .challenge-bg{
   background-image: url('../public/assets/challenger.png');

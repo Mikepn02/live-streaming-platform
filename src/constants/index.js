@@ -503,3 +503,53 @@ export const MessageArray= [
         reply: "Hellosssssssssssssssse..."
     },
 ]
+export const Gifts = [
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+    {
+        image: '/assets/flowers.png',
+        gift: 'flower'
+    },
+]

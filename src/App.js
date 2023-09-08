@@ -17,6 +17,8 @@ import ConnectBank from "./pages/dashboard-content/ConnectBank";
 import SettingContent from "./pages/dashboard-content/SettingContent";
 import Livestream from "./pages/dashboard-content/Livestream";
 import ChallengePage from "./pages/dashboard-content/ChallengePage";
+import AddCoins from "./pages/dashboard-content/AddCoins";
+import SendGift from "./pages/dashboard-content/Gift";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -71,7 +73,15 @@ function App() {
           />
           <Route
             path="/challenge"
-            element={<ChallengePage/>}
+            element={<ChallengePage />}
+          />
+          <Route
+            path="/coins"
+            element={<AddCoins />}
+          />
+          <Route
+            path="/gift"
+            element={<SendGift/>}
           />
           <Route path="/authentication" element={<Signup />} />
           <Route path="/dashboard/card" element={<Streamcard />} />
