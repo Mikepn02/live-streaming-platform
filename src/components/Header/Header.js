@@ -33,7 +33,7 @@ const Header = () => {
           <FontAwesomeIcon
             icon={isVisible ? faTimes : faBars}
             onClick={toggleVisible}
-            className="lg:hidden cursor-pointer right-0"
+            className="lg:hidden cursor-pointer right-0 ml-32"
           />
         </nav>
 

@@ -10,7 +10,7 @@ const Streamcard = ({title , host, user,image , topic , viewers}) => {
                 <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <img src="/assets/play.png" alt="play" className="inline-block" />
                 </div>
-                <button className="absolute top-0 left-[70%] top-2  bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]">
+                <button className="absolute  left-[70%] top-2  bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]">
                         {host}
                 </button>
                 </div>

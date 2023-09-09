@@ -8,10 +8,11 @@ const Bottombar = () => {
     <section className='bottombar'>
         <div className='bottombar_container'>
             {sidebarLinks.map((link) => {
-                const isActive = (location.pathname.includes(link.route) && link.route.length> 1 || location.pathname === link.route )
+                let isActive = (location.pathname.includes(link.navigate) && link.navigate.length < 1) || link.navigate === location.pathname;
                 return (
                     <Link
                     key={link.label}
+                    to={link.navigate}
                     className={`bottombar_link ${isActive && 'bg-red-500'}`}
                     >
                         <img 
@@ -21,8 +22,8 @@ const Bottombar = () => {
                         height={24}
                         />
 
-                        <p className='text-subtle-medium text-white max-sm:hidden'>{link.label.split(/\s+/)[0]}</p>
                     
+                        <p className='text-subtle-medium text-white max-sm:hidden'>{link.label.split(/\s+/)[0]}</p>
                     </Link>
                 )
             })}
