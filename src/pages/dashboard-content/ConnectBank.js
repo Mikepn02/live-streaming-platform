@@ -1,27 +1,29 @@
 import React, { useState } from "react";
+import {useMediaQuery} from '@mui/material';
 
 const ConnectBank = () => {
     const [checked , setChecked] = useState(false)
+    const isMobile  = useMediaQuery("(max-width: 600px)")
     const handleCheckboxChange = () => {
         setChecked(!checked)
     }
   return (
-    <div className="mt-10">
+    <div className="mt-10 md:w-full w-[90vw]">
       <h1 className="text-2xl font-semibold mb-4">Connect Your bank account</h1>
-      <div className="grid grid-cols-2 gap-4 p-5">
+      <div className={` grid ${isMobile ? 'grid-cols-1 gap-2' : 'grid-cols-2 gap-4 p-5'}`}>
         <div>
           <label htmlFor="bank">Select your bank account</label>
-          <div className="md:relative md:flex items-center w-[450px] h-[45px]">
+          <div className="md:relative flex items-center md:w-[450px] h-[45px]">
             <select className="block appearance-none w-full py-2 pl-3 pr-10 border-2 border-[#eaeaea] rounded-[10px] bg-[#D7D7D7] text-gray-700 focus:outline-none">
               <option value="english">Cogebank</option>
               <option value="french">Bk</option>
             </select>
-            <div className="absolute insert-y-0 right-0 flex items-center pr-3">
+            <div className="absolute insert-y-0 right-3 flex items-center pr-3">
               <img src="/assets/dropdown.svg" alt="dropdown" />
             </div>
           </div>
         </div>
-        <div className="w-[450px]">
+        <div className="md:w-[450px]">
           <label
             htmlFor="cvv"
             className="block text-sm font-medium text-gray-700"
@@ -36,7 +38,7 @@ const ConnectBank = () => {
             />
           </div>
         </div>
-        <div className="w-[450px]">
+        <div className="md:w-[450px]">
           <label
             htmlFor="cvv"
             className="block text-sm font-medium text-gray-700"
@@ -51,7 +53,7 @@ const ConnectBank = () => {
             />
           </div>
         </div>
-        <div className="w-[450px]">
+        <div className="md:w-[450px]">
           <label
             htmlFor="cvv"
             className="block text-sm font-medium text-gray-700"
@@ -67,7 +69,7 @@ const ConnectBank = () => {
           </div>
         </div>
       </div>
-      <div className="flex space-x-4 ml-8">
+      <div className="flex space-x-4 ml-8 mt-4">
         <input type="checkbox"  checked={checked} onChange={handleCheckboxChange} 
         className="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring focus:ring-blue-500 focus:outline-none" 
         />

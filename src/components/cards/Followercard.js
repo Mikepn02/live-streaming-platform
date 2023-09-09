@@ -6,13 +6,13 @@ const Followercard = ({ title, host, user, image, viewers, action }) => {
     return (
 
         <div>
-            <Box className='flex flex-col  md:w-[30vw] space-y-1 w-full bg-aliceblue h-[40vh]'>
+            <Box className='flex flex-col  md:w-[30vw] space-y-1 w-full bg-aliceblue md:h-[40vh] h-[50vh]'>
                 <div className="relative space-y-2">
                     <img src={image} alt="strange" className="h-[25vh] rounded-[20px] w-auto rounded-t-[40px]" />
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <img src="/assets/play.png" alt="play" className="inline-block" />
                     </div>
-                    <button className="absolute top-0 left-[450px] bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]">
+                    <button className="absolute top-0 left-[70%]  bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]">
                         {host}
                     </button>
                 </div>

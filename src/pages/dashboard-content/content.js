@@ -4,8 +4,8 @@ import { Slide1, Slide2 } from "./slide";
 const Content = () => {
   return (
     <section>
-      <div className="md:my-20 my-5 md:ml-10 ml-2 justify-center md:mx-auto ">
-        <img src="/assets/car.png" alt="car" height={100} />
+      <div className="md:my-20 my-5 md:ml-10 ml-2  justify-center md:mx-auto ">
+        <img src="/assets/car.png" alt="car" className=' h-[40vh] rounded-xl w-full'/>
       </div>
       <div className="md:pl-10 pl-0 w-full py-10 space-y-10">
         <h1 className="font-semibold mt-10">Recommend For you</h1>

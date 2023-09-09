@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 import Giftcard from '../../components/cards/Giftcard'
 import { Gifts } from '../../constants'
+import { Link , useNavigate } from 'react-router-dom'
 
 const SendGift = () => {
     const [isVisible , setIsVisible] = useState(true)
+    const navigate = useNavigate()
     const handleCloseClick = () => {
         setIsVisible(false)
+        navigate('/challenge')
     }
     return (
         <div className='stream-bg h-screen flex justify-center items-center'>
             <div className={`bg-white w-[50vw] h-[45vh] rounded-[20px]  overflow-x-auto ${isVisible ? '' : 'hidden'}`}>
                 <div className='flex justify-end pr-8 pt-8  items-center'>
-                    <button
-                        onClick={handleCloseClick}
-                        className='bg-black text-white flex items-center w-8 h-8 fixed rounded-full justify-center'>
-                        X
-                    </button>
+                <Link 
+                to='/challenge'
+                onClick={handleCloseClick}
+                className='bg-black text-white flex items-center w-8 h-8 fixed rounded-full justify-center'>
+                    X
+                </Link>
                 </div>
                 <h1 className='text-center text-xl font-bold mt-16'>Send Gift</h1>
                 <div className='flex w-[30%] m-auto items-center  h-[50px] border-2 bg-[#FAFAFA] rounded-[50px]'>

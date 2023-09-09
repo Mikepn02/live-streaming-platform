@@ -13,7 +13,7 @@ const Streamerscontent = () => {
       </div>
 
       <h1 className='mt-28 font-bold'>People you may know</h1> 
-      <div className='grid grid-cols-4 gap-5 mt-5'>
+      <div className='grid md:grid-cols-4 grid-cols-1 gap-5 mt-5'>
          {userFollowercardinfo2.map((user) => (
             <UserFollowcard2 
              name={user.name}

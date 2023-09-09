@@ -7,14 +7,14 @@ const Sidebar = () => {
     const location = useLocation()
     return (
         <div className='custom-scrollbar leftsidebar'>
-            <div className='flex justify-center pt-5  space-x-4 items-center font-bold'>
+            <Link to='/' className='flex justify-center pt-5  space-x-4 items-center font-bold'>
                 <img src='/assets/logo.svg' alt='logo' />
                 <p>Videbucks</p>
-            </div>
+            </Link>
             <div>
                 <button className='flex mx-auto px-5 justify-center items-center space-x-2 my-10 text-white bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D]  w-42 h-10 rounded-lg hover:bg-[#D760B4] focus:outline-none focus:ring-2 focus:ring-[#E179CB]'>
                     <img src='/assets/hotspot.svg' alt='hotspot'  width={24} height={24}/>
-                    <p className='text-sm-1 flex font-semibold'>Stream now</p>
+                    <Link to='/livestream' className='text-sm-1 flex font-semibold'>Stream now</Link>
                 </button>
 
             </div>
@@ -50,10 +50,11 @@ const Sidebar = () => {
                         <img src='/assets/download.svg' alt='download' />
                         <p>Mobile App</p>
                     </div>
-                    <div className='flex font-bold text-pink-400 space-x-2 bg-[#d8df4d42] w-full h-12 items-center justify-center'>
+                    <Link to='/dashboard/premium' 
+                    className='flex font-bold text-pink-400 space-x-2 bg-[#d8df4d42] w-full h-12 items-center justify-center'>
                         <img src='/assets/crown.svg' alt='download' />
                         <p>Get Premium</p>
-                    </div>
+                    </Link>
                     <div className='flex font-bold text-white bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] space-x-2 w-42 h-12 justify-center items-center rounded-lg'>
                         <img src='/assets/addp.svg' alt='download' width={24} height={24} />
                         <p className=''>invite friend</p>

@@ -3,6 +3,7 @@ import NotificationOutlinedIcon from "@mui/icons-material/NotificationsOutlined"
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/Person2Outlined";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Topbar = () => {
   return (
     <section className="w-full md:w-3/4 md:mr-40 mr-0">
@@ -62,13 +63,18 @@ const Topbar = () => {
 
           <div className="hidden md:flex">
             <IconButton>
-              <NotificationOutlinedIcon />
+              <Link><NotificationOutlinedIcon /></Link>
             </IconButton>
             <IconButton>
-              <SettingsOutlinedIcon />
+              <Link to='/dashboard/setting'> <SettingsOutlinedIcon /></Link>
             </IconButton>
             <IconButton>
-              <PersonOutlinedIcon />
+              <Link to='/dashboard/profile'>
+                <div className='rounded-full border-2 border-pink-500 p-1'>
+                  <img src='/assets/follower.png' alt="user" width={40} height={40} />
+                </div>
+
+              </Link>
             </IconButton>
           </div>
         </div>

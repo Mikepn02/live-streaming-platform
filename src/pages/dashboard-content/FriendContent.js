@@ -18,7 +18,7 @@ const FriendContent = () => {
       }
     };
   return (
-    <div className=''>
+    <div className='md:w-full w-[95vw]'>
       <h1 className=' font-bold md:mt-10 text-xl'>Your friends</h1>
       <div className='grid md:grid-cols-4 gap-2 mt-5 md:mx-0 mx-auto md:grid grid-cols-1 md:space-x-2 md:mt-3 w-full'>
          {userFollowercardinfo2.map((user) => (
@@ -31,7 +31,7 @@ const FriendContent = () => {
             />
          ))}
       </div>
-      <h1 className='md:mt-20 mt-3 font-bold text-xl'>Your friends are streaming</h1>
+      <h1 className='md:mt-20  font-bold text-xl'>Your friends are streaming</h1>
       <div className="md:mt-10 w-full">
         <div className="md:mt-3 mt-2 md:mb-0 mb-8 w-full">
           <div className="md:grid md:grid-cols-2 md:gap-3 ">

@@ -49,10 +49,25 @@ function App() {
           />
           <Route
             path="/dashboard/hhh"
-            // element={<Dashboard contentComponent={Streamerscontent} />}
-            // element={<Dashboard contentComponent={ProfileContent} />}
-            // element={<Dashboard contentComponent={ConnectBank} />}
+            element={<Dashboard contentComponent={Streamerscontent} />}
+
+          />
+          <Route
+            path="/dashboard/setting"
             element={<Dashboard contentComponent={SettingContent} />}
+          />
+          <Route
+            path="/dashboard/profile"
+            element={<Dashboard contentComponent={ProfileContent} />}
+          />
+          <Route
+            path="/dashboard/premium"
+            element={<Dashboard contentComponent={PremiumContent} />}
+          />
+          <Route
+            path="/dashboard/bank"
+            element={<Dashboard contentComponent={ConnectBank} />}
+
           />
           <Route
             path="/livestream"
@@ -81,7 +96,7 @@ function App() {
           />
           <Route
             path="/gift"
-            element={<SendGift/>}
+            element={<SendGift />}
           />
           <Route path="/authentication" element={<Signup />} />
           <Route path="/dashboard/card" element={<Streamcard />} />

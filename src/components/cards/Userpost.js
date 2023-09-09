@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 const Userpost = ({ profile, user, image, topic }) => {
   return (
-    <div className='w-1/4'>
+    <div className='md:w-1/4 w-full'>
       <Box className='flex flex-col  border-2 rounded-[20px]  p-5 space-y-5 '>
         <div className="relative space-y-2 flex justify-between items-center">
           <div className='flex space-x-2 items-center'>
