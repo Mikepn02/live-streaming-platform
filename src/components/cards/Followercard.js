@@ -6,7 +6,7 @@ const Followercard = ({ title, host, user, image, viewers, action }) => {
     return (
 
         <div>
-            <Box className='flex flex-col  md:w-[30vw] space-y-1 w-full bg-aliceblue md:h-[40vh] h-[50vh]'>
+            <Box className='flex flex-col  md:w-[30vw] space-y-1 w-full bg-aliceblue md:h-[40vh] h-[60vh]'>
                 <div className="relative space-y-2">
                     <img src={image} alt="strange" className="h-[25vh] rounded-[20px] w-auto rounded-t-[40px]" />
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

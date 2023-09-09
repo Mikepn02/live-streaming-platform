@@ -20,13 +20,13 @@ const Streamcontent = () => {
   return (
     <div>
       <h1 className="font-semibold text-xl md:mt-8 mt-8">🔥Trending now</h1>
-      <div className="md:space-x-2 md:mt-3 mt-3 flex w-full">
+      <div className="md:space-x-2 md:mt-3 mt-10 flex w-full">
         <Slide1 />
       </div>
       <h1 className="font-bold mt-4 text-xl">From people you follow</h1>
-      <div className="md:mt-3 w-full">
+      <div className="md:mt-3 mt-6 w-full">
         <div className="md:mt-3 mt-2 md:mb-0 mb-8 w-full">
-          <div className="md:grid md:grid-cols-2 md:gap-3 ">
+          <div className="md:grid md:grid-cols-2 md:gap-3 gap-5">
             {currentItems.map((follower, i) => (
               <div key={i}>
                 <Followercard

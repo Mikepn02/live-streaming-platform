@@ -10,8 +10,8 @@ const Followers = () => {
     </div>
 
     <div className='mt-10 flex flex-col justify-center items-center text-center w-full md:w-[80%] mx-auto'>
-   <h1 className='text-5xl font-bold pb-10'>How to make money now <br /> with <span className='text-[#D7DF4D]'>Live Stream</span></h1>
-   <p className='px-auto w-[60vw]'>
+   <h1 className='md:text-5xl text-2xl font-bold pb-10'>How to make money now <br /> with <span className='text-[#D7DF4D]'>Live Stream</span></h1>
+   <p className='px-auto md:w-[60vw] w-full'>
        Live streaming has transformed the way content creators and 
        their audiences interact, bringing a new level of engagement and connection. 
        In this digital age, creators from various platforms engage with their viewers in real time, fostering a sense of community 
