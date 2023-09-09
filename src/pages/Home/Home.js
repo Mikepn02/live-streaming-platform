@@ -9,7 +9,7 @@ import Cards from '../../components/works/cards'
 
 const Home = () => {
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-2">
        <Header />
        <Describe />
        <Stream />
