@@ -43,7 +43,7 @@ const Footer = () => {
                             placeholder="example@gmail.com"
                             className="border border-gray-400 rounded px-2 py-1 flex-1"
                         />
-                        <button className="md:w-[8vw] h-10 bg-[#D7DF4D] text-white rounded hover:bg-[#A3A927] transition-colors duration-300">
+                        <button className="md:w-[8vw] h-10 bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white rounded hover:bg-[#A3A927] transition-colors duration-300">
                             Subscribe
                         </button>
                     </div>

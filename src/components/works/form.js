@@ -105,7 +105,7 @@ const Forms = () => {
                 />
               </Box>
               <Box display="flex" justifyContent="end" mt="20px">
-                <button className="bg-[#D7DF4D] w-48 h-12">Submit Message</button>
+                <button className="bg-gradient-to-r  from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-[10px] w-48 h-12">Submit Message</button>
               </Box>
             </form>
           )}

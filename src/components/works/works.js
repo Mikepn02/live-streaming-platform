@@ -15,7 +15,7 @@ const Describe = () => {
             <Link to='/dashboard' className='bg-white text-black font-semibold px-4 py-2  mb-5 rounded-[8px]'>Get Started</Link>
         </div>
         <img src='/assets/Frame 6.png' alt='frame' className='md:w-1/3 w-full h-[35vh]' />
-        <div className="hidden lg:flex absolute inset-x-0 bottom-0 h-20 bg-[#ADBC8C] transform skew-y-4 skew-y-6"></div>
+        {/* <div className="hidden lg:flex absolute inset-x-0 bottom-0 h-20 bg-[#ADBC8C] transform skew-y-4 skew-y-6"></div>z */}
     </div>
     
 

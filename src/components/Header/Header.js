@@ -38,7 +38,7 @@ const Header = () => {
         </nav>
 
         <Link to="/dashboard">
-          <button className="hidden lg:flex bg-[#D7DF4D] hover:bg-yellow-400 text-white font-semibold px-4 py-2 border-r-2">
+          <button className="hidden lg:flex bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-[10px] hover:bg-yellow-400 text-white font-semibold px-4 py-2 border-r-2">
             Get started
           </button>
         </Link>
