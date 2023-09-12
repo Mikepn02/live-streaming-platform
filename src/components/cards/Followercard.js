@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
 import { Box } from '@mui/material'
 
 const Followercard = ({ title, host, user, image, viewers, action }) => {
@@ -34,15 +35,19 @@ const Followercard = ({ title, host, user, image, viewers, action }) => {
                     <p className='font-semibold text-[#7F7F7F]'>{viewers} viewers</p>
                     {action === 'challenge' ? (
 
-                        <div className='space-x-5'>
+                        <Link 
+                        to='/challenge'
+                        className='space-x-5'>
                             <button className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-black w-32 h-10 rounded-[20px]'>Challenge</button>
 
-                        </div>
+                        </Link>
                     ) : (
-                        <div className='space-x-5'>
+                        <Link 
+                        to='/livestream'
+                        className='space-x-5'>
                             <button className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-black w-32 h-10 rounded-[20px]'>Watch Now</button>
 
-                        </div>
+                        </Link>
 
                     )
                     }

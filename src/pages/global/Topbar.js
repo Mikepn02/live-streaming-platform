@@ -1,17 +1,17 @@
 import { IconButton } from "@mui/material";
 import NotificationOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/Person2Outlined";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Topbar = () => {
   return (
     <section className="w-full md:w-3/4 md:mr-40 mr-0">
       <div className="md:pt-5 pt-4 flex md:justify-evenly ">
         <div className="flex md:space-x-20 space-x-4 ">
-          <div className="md:pt-0 md:hidden pt-2 space-x-4 items-center font-bold justify-center">
+          <Link 
+          to='/'
+          className="md:pt-0 md:hidden pt-2 space-x-4 items-center font-bold justify-center">
             <img src="/assets/logo.svg" alt="logo" />
-          </div>
+          </Link>
           <div className="hidden space-x-2 md:flex">
             <button className="flex bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D]  rounded-[50px] w-20 h-10 items-center justify-center">
               <img src="/assets/gift.png" alt="gift" width={24} height={24} />

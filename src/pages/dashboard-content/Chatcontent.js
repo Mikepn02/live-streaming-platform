@@ -31,7 +31,7 @@ const Chatcontent = () => {
     setActiveTab(tab);
   }
   return (
-    <div className={`w-full ${isMobile ? 'md:w-full gap-4 ': 'md:w-3/4'} md:w-[90%]  mr-20 h-[85vh]  flex md:flex-row flex-col rounded-xl mt-8`}>
+    <div className={`w-full ${isMobile ? 'md:w-full gap-4 ': 'md:w-3/4'} md:w-[90%]  mr-20 h-screen  flex md:flex-row flex-col rounded-xl mt-8`}>
       <faAngleLeft />
       <div className={`border-14  border-[10px] rounded-[1px] border-pink-400 hidden lg:block`}>
         <div className='flex flex-col items-center justify-center p-8 space-y-4'>
@@ -66,7 +66,7 @@ const Chatcontent = () => {
         </div>
 
       </div>
-      <div className={`border-[10px] ${isMobile ? 'border-black' : 'border-pink-400'}  rounded-[2px] `}>
+      <div className={`border-[10px] rounded-xl ${isMobile ? 'border-black' : 'border-pink-400'}  mb-20 `}>
         <div><Messagebar /></div>
         <div>
           <div class="space-x-4 text-center font-semibold ">
