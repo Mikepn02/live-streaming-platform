@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { } from "@fortawesome/free-solid-svg-icons";
+
 
 const Footer = () => {
     return (
@@ -17,36 +16,36 @@ const Footer = () => {
                         making money with Live Stream Start live streaming and making money
                     </p>
                     <div className="flex flex-row gap-2">
-                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-2 rounded-full w-12 h-12 items-center justify-center">
+                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-3 rounded-full w-14 h-14 items-center justify-center">
                             <img src="/assets/instagram.svg" alt="instagram" />
                         </div>
-                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-2 rounded-full w-12 h-12 items-center justify-center">
+                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-3 rounded-full w-14 h-14 items-center justify-center">
                             <img src="/assets/facebook.svg" alt="facebook" className="mx-auto" />
                         </div>
-                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-2 rounded-full  w-12 h-12 items-center justify-center">
+                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-3 rounded-full  w-14 h-14 items-center justify-center">
                             <img src="/assets/linkedin.svg" alt="linkedin" />
                         </div>
-                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-2 rounded-full w-12 h-12 items-center justify-center">
+                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-3 rounded-full w-14 h-14 items-center justify-center">
                             <img src="/assets/twitter.svg" alt="twitter" />
                         </div>
-                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-4 rounded-full w-12 h-12 items-center justify-center">
+                        <div className="bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] p-3 rounded-full w-14 h-14 items-center justify-center">
                             <img src="/assets/discord.svg" alt="twitter" />
                         </div>
                     </div>
                 </div>
 
-                <div className="  text-center md:text-left">
+                <div className="  text-center md:text-left space-y-4">
                     <h1 className="text-black font-bold">Quick Link</h1>
-                    <ul>
+                    <ul className="space-y-4">
                         <li>Home</li>
                         <li>About us</li>
                         <li>Features</li>
                         <li>Contact us</li>
                     </ul>
                 </div>
-                <div className=" items-center  justify-center text-center md:text-left">
+                <div className=" items-center  justify-center text-center md:text-left space-y-4">
                     <h1 className="text-black font-bold">About</h1>
-                    <ul>
+                    <ul className="space-y-4">
                         <li>Term of user</li>
                         <li>FAQ</li>
                         <li>License</li>
