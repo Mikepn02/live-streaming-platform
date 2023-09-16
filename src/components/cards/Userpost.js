@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { likePost, unlikePost } from '../../state';
+import { decrementLike, decrementUnlike, likePost, unlikePost } from '../../state';
+import { Link } from 'react-router-dom';
 
-const Userpost = ({ profile, user, image, topic, likes, isLiked, postId }) => {
+const Userpost = ({ profile, user, image, topic, likes, unlikes, isLiked, postId }) => {
   const dispatch = useDispatch();
   const handleLike = () => {
     dispatch(likePost({ postId }))
+    dispatch(decrementUnlike({ postId }))
   }
   const handleUnlike = () => {
     dispatch(unlikePost({ postId }))
+    dispatch(decrementLike({ postId }))
   }
   return (
     <div className='md:w-1/4 w-full'>
@@ -44,11 +47,15 @@ const Userpost = ({ profile, user, image, topic, likes, isLiked, postId }) => {
               onClick={handleUnlike}
               className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-full p-2 flex'>
               <img src='/assets/down.svg' alt='unlike' />
-              <h1 className='text-white font-bold'>{likes}</h1>
+              <h1 className='text-white font-bold'>{unlikes}</h1>
             </div>
             <img src='/assets/comment.svg' alt='comment' />
           </div>
-          <button className='bg-[#9A9A9A] to-[#D7DF4D]  w-24 h-8 rounded-[20px] text-white font-semibold'>Challenge</button>
+          <Link
+            to='/challenge'
+          >
+            <button className='bg-[#9A9A9A] to-[#D7DF4D]  w-24 h-8 rounded-[20px] text-white font-semibold'>Challenge</button>
+          </Link>
         </div>
       </Box>
     </div>

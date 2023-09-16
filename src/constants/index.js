@@ -240,6 +240,7 @@ export const Userpostinfo = [
         user: "iShowSpeed",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -248,6 +249,7 @@ export const Userpostinfo = [
         user: "iShowSpeed",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -257,6 +259,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -266,6 +269,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -275,6 +279,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -284,6 +289,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -293,6 +299,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -302,6 +309,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
     {
@@ -311,6 +319,7 @@ export const Userpostinfo = [
         image: "/assets/girl.jpg",
         topic: 'IShowSpeed · bald · Videos · Subsrube to my 2nd channel on YT · Popular videos · Shorts · i might die bye · I Met Neymar · Eu Prado No Bailo With Neymar .',
         isLiked:false,
+        unlikes:0,
         likes:0,
     },
 ]
