@@ -3,7 +3,7 @@ import { Slide1, Slide2 } from "./slide";
 
 const Content = () => {
   return (
-    <section>
+    <section className="bg-red-500">
       <div className="md:my-20 my-5 md:ml-10 ml-2 justify-center md:mx-auto ">
         <img src="/assets/car.png" alt="car" height={100} />
       </div>

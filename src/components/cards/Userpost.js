@@ -15,7 +15,7 @@ const Userpost = ({ profile, user, image, topic, likes, unlikes, isLiked, postId
     dispatch(decrementLike({ postId }))
   }
   return (
-    <div className='md:w-1/4 w-full'>
+    <div className='xl:w-1/4 lg:w-1/4 w-full'>
       <Box className='flex flex-col  border-2 rounded-[20px]  p-5 space-y-5 '>
         <div className="relative space-y-2 flex justify-between items-center">
           <div className='flex space-x-2 items-center'>

@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Streamcard = ({title , host, user,image , topic , viewers}) => {
     return (
@@ -7,9 +8,9 @@ const Streamcard = ({title , host, user,image , topic , viewers}) => {
             <Box className='flex flex-col  bg-aliceblue h-[40vh] bg-[#F0F8FF] rounded-[40px]'>
                 <div>
                 <img src={image} alt='strange' className='h-[20vh] rounded-t-[40px] w-full'/>
-                <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <Link  to='/livestream' className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <img src="/assets/play.png" alt="play" className="inline-block" />
-                </div>
+                </Link>
                 <button className="absolute  left-[70%] top-2  bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] text-white font-bold w-20 h-8 rounded-[10px]">
                         {host}
                 </button>

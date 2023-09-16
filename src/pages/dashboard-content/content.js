@@ -3,7 +3,7 @@ import { Slide1, Slide2 } from "./slide";
 
 const Content = () => {
   return (
-    <section className="xl:w-[80%] md:w-full w-full">
+    <section className="xl:w-full w-full  md:mx-10 xl:mx-0 md:w-[768px]">
       <div className="xl:my-20 my-5 xl:ml-10 ml-2  justify-center xl:mx-auto ">
         <img src="/assets/car.png" alt="car" className=' h-[40vh] rounded-xl w-full'/>
       </div>

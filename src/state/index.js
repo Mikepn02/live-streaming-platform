@@ -16,8 +16,6 @@ export const authSlice = createSlice({
            const { postId } = action.payload;
            const updatedLikedPosts = state.posts.map((post) => {
              if(post.postId === postId){
-                console.log("Hello")
-                console.log(post)
                 return {
                     ...post,
                     isLiked: true,
