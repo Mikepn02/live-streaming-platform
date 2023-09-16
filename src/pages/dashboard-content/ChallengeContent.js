@@ -1,9 +1,10 @@
 import React from 'react'
 import { Slide3 } from './slide'
-import { Userpostinfo } from '../../constants/index';
 import Userpost from '../../components/cards/Userpost';
+import { useDispatch, useSelector } from 'react-redux';
 
 const ChallengeContent = () => {
+    const posts = useSelector((state) => state.auth.posts);
     return (
         <div className="">
             <div className="md:space-x-2 md:mt-8 mt-8 h-[45vh] flex w-full">
@@ -17,16 +18,15 @@ const ChallengeContent = () => {
                         <img src='/assets/video-plus.svg' alt='video' width={100} height={100} />
                         <p>Create post</p>
                     </div>
-                    {Userpostinfo.map((post, item) => (
-                        <Userpost
-                            key={item} // Make sure to provide a unique key when mapping
-                            profile={post.profile}
-                            user={post.user}
-                            image={post.img}
-                            topic={post.topic}
-                            className="w-1/4" // Set the width of each item to 25% (four items in a row)
+                    {posts.map((post) => {
+                        return (
+                            <Userpost
+                            {...post}
+                            key={post.postId} 
+                            className="w-1/4" 
                         />
-                    ))}
+                        )
+                    })}
                 </div>
 
 

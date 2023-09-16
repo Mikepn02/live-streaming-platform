@@ -13,15 +13,15 @@ const Header = () => {
   return (
     <header className="p-4">
       <div className="container mx-auto flex flex-row items-center justify-between w-full">
-        <div className="flex items-center space-x-2 mb-4 md:mb-0 ">
+        <div className="flex items-center space-x-2 mb-4 xl:mb-0 ">
           <img src="/assets/logo.svg" alt="logo" className="w-8 h-8" />
           <p className="text-black font-semibold text-2xl">videbucks</p>
         </div>
 
-        <nav className="mb-4  md:mb-0 relative ">
+        <nav className="mb-4  xl:mb-0 relative ">
           <ul
-            className={` mx-auto md:space-x-12 space-x-0 text-[#3C3C3C] ${
-              isVisible ? "flex flex-col justify-center p-12 space-y-8   bg-blue items-center absolute bg-blue-500 z-10 top-12 left-0 w-full" : "hidden lg:flex "
+            className={` mx-auto xl:space-x-12 space-x-0 text-[#3C3C3C] ${
+              isVisible ? "flex flex-col justify-center p-12 space-y-8   bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] items-center absolute bg-blue-500 z-10 top-12 left-0 w-full" : "hidden lg:flex "
               
             } `}
           >
@@ -33,7 +33,7 @@ const Header = () => {
           <FontAwesomeIcon
             icon={isVisible ? faTimes : faBars}
             onClick={toggleVisible}
-            className="lg:hidden cursor-pointer right-0 ml-32"
+            className="lg:hidden cursor-pointer right-0 ml-32 md:ml-96"
           />
         </nav>
 

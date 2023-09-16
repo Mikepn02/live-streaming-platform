@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { likePost, unlikePost } from '../../state';
 
-const Userpost = ({ profile, user, image, topic }) => {
+const Userpost = ({ profile, user, image, topic, likes, isLiked, postId }) => {
+  const dispatch = useDispatch();
+  const handleLike = () => {
+    dispatch(likePost({ postId }))
+  }
+  const handleUnlike = () => {
+    dispatch(unlikePost({ postId }))
+  }
   return (
     <div className='md:w-1/4 w-full'>
       <Box className='flex flex-col  border-2 rounded-[20px]  p-5 space-y-5 '>
@@ -14,19 +23,29 @@ const Userpost = ({ profile, user, image, topic }) => {
         </div>
 
         <div>
-        {image && (
-          <div>
-            <img src={image} alt='post' className='w-full max-h-[20vh] rounded-[20px]' />
-          </div>
-        )}
-          
+          {image && (
+            <div>
+              <img src={image} alt='post' className='w-full max-h-[20vh] rounded-[20px]' />
+            </div>
+          )}
+
           <h1 className='mt-2'>{topic}</h1>
         </div>
 
         <div className='px-2 flex justify-between items-center'>
           <div className='flex space-x-2'>
-            <div className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-full p-2'><img src='/assets/up.svg' alt='like' /></div>
-            <div className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-full p-2'><img src='/assets/down.svg' alt='like' /></div>
+            <div
+              onClick={handleLike}
+              className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-full p-2 flex space-x-2'>
+              <img src='/assets/up.svg' alt='like' />
+              <h1 className='text-white font-bold'>{likes}</h1>
+            </div>
+            <div
+              onClick={handleUnlike}
+              className='bg-gradient-to-r from-[#E179CB] via-[#DCAB8D] to-[#D7DF4D] rounded-full p-2 flex'>
+              <img src='/assets/down.svg' alt='unlike' />
+              <h1 className='text-white font-bold'>{likes}</h1>
+            </div>
             <img src='/assets/comment.svg' alt='comment' />
           </div>
           <button className='bg-[#9A9A9A] to-[#D7DF4D]  w-24 h-8 rounded-[20px] text-white font-semibold'>Challenge</button>
